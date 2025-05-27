@@ -11,7 +11,6 @@ This repository contains a pipeline to classify the habitats of source organisms
 - Accepts target taxa or genome accession list as input.
 - Supports multiple metadata sources: GTDB, NCBI, or both.
 - Classifies habitat using Bioproject and Biosample metadata.
-- Flexible options for domain selection (bacteria or archaea).
 - Modular scripts for easy customization and extension.
 
 ---
@@ -29,11 +28,13 @@ cd GenomeHabitatClassifier
 
 Before running the pipeline, you need to download the required metadata files.  
 We provide a helper script `downloadDB.sh` to download most database files automatically.
+```
 
 To download the databases, run:
 
 ```bash
 bash downloadDB.sh
+```
 
 > **Note on GTDB Metadata Files:**  
 > GTDB metadata filenames (e.g., `ar53_metadata_r220.tsv.gz`, `bac120_metadata_r220.tsv.gz`) may change with each release.  
