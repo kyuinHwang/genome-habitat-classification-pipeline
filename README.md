@@ -40,6 +40,12 @@ bash downloadDB.sh
 > GTDB metadata filenames (e.g., `ar53_metadata_r220.tsv.gz`, `bac120_metadata_r220.tsv.gz`) may change with each release.  
 > Please check the [GTDB data releases page](https://data.ace.uq.edu.au/public/gtdb/data/releases/) for the latest filenames and update both the `downloadDB.sh` script and your `config.txt` accordingly before downloading and running the pipeline.
 
+# Configuration
+
+By default, the pipeline uses ./config.txt for configuration parameters.
+You can specify a different config file with the --config option.
+The config.txt file contains paths to the metadata files, so please update it to match the locations where you downloaded the database files (Default: ./DB for downloadDB.sh)
+
 
 ## Usage
 
@@ -55,12 +61,6 @@ python run_gtdbtaxa2habitat_pipeline.py --target_taxa g__Nitrotoga --output_dir 
 python run_accession2habitat.py --input_accessions ./genomes.txt --output_dir ./output
 ```
 Run -h on either script for detailed options.
-
-Configuration
-
-By default, the pipeline uses ./config.txt for configuration parameters.
-You can specify a different config file with the --config option.
-The config.txt file contains paths to the metadata files, so please update it to match the locations where you downloaded the database files (Default: ./DB for downloadDB.sh)
 
 ## Scripts and Libraries
 
