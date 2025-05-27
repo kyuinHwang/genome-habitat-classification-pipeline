@@ -41,7 +41,7 @@ bash downloadDB.sh
 > Please check the [GTDB data releases page](https://data.ace.uq.edu.au/public/gtdb/data/releases/) for the latest filenames and update both the `downloadDB.sh` script and your `config.txt` accordingly before downloading and running the pipeline.
 
 
-Usage
+##Usage
 
 Two main pipeline entry points:
 
