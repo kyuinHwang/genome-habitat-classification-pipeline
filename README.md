@@ -100,9 +100,12 @@ For questions or suggestions, please contact Kyuin Hwang (kyuin@kopri.re.kr).
 ## Reference
 
 This pipeline was developed as part of a research project on single-cell genomics analysis of Mercer Subglacial Lake.
+
 The preprint is available on Research Square:
 https://www.researchsquare.com/article/rs-4392950/v1
+
 (This link will be updated upon journal publication.)
+
 The habitat-determining keywords, flags, habitat-determining rules available in the Supplementary Tables
 
 Parts of this README were written or revised with the help of AI to enhance clarity and precision.
