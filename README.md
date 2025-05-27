@@ -25,10 +25,10 @@ Clone the repository:
 ```bash
 git clone https://github.com/yourusername/GenomeHabitatClassifier.git
 cd GenomeHabitatClassifier
+```
 
 Before running the pipeline, you need to download the required metadata files.  
 We provide a helper script `downloadDB.sh` to download most database files automatically.
-```
 
 To download the databases, run:
 
