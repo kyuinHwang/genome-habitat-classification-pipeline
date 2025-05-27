@@ -40,7 +40,7 @@ bash downloadDB.sh
 > GTDB metadata filenames (e.g., `ar53_metadata_r220.tsv.gz`, `bac120_metadata_r220.tsv.gz`) may change with each release.  
 > Please check the [GTDB data releases page](https://data.ace.uq.edu.au/public/gtdb/data/releases/) for the latest filenames and update both the `downloadDB.sh` script and your `config.txt` accordingly before downloading and running the pipeline.
 
-# Configuration
+### Configuration
 
 By default, the pipeline uses ./config.txt for configuration parameters.
 You can specify a different config file with the --config option.
