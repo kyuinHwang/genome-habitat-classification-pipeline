@@ -41,14 +41,19 @@ bash downloadDB.sh
 > Please check the [GTDB data releases page](https://data.ace.uq.edu.au/public/gtdb/data/releases/) for the latest filenames and update both the `downloadDB.sh` script and your `config.txt` accordingly before downloading and running the pipeline.
 
 
-##Usage
+## Usage
 
 Two main pipeline entry points:
 
 1. Run full pipeline from GTDB taxa
+
+```bash
 python run_gtdbtaxa2habitat_pipeline.py --target_taxa g__Nitrotoga --output_dir ./output
+```
 2. Run habitat classification from genome accession list
+```bash
 python run_accession2habitat.py --input_accessions ./genomes.txt --output_dir ./output
+```
 Run -h on either script for detailed options.
 
 Configuration
