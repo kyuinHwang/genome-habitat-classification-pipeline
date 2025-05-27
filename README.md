@@ -64,7 +64,7 @@ Run -h on either script for detailed options.
 
 ## Scripts and Libraries
 
-This pipeline consists of several modular scripts and library files to facilitate genome habitat classification:
+This pipeline consists of several modular scripts and library files to facilitate genome habitat classification
 The run_gtdbtaxa2habitat_pipieline.py composited by all four scripts (0_,1_,2_,3_)
 The run_accession2habitat.py composited by two scripts (1_, 2_)
 
