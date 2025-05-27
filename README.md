@@ -87,15 +87,15 @@ The run_accession2habitat.py composited by two scripts (1_, 2_)
 These modules are designed to be easily extendable for customization or integration with other bioinformatics pipelines.
 
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contact
+## Contact
 
 For questions or suggestions, please contact Kyuin Hwang (kyuin@kopri.re.kr).
 
-Reference
+## Reference
 
 This pipeline was developed as part of a research project on single-cell genomics analysis of Mercer Subglacial Lake.
 The preprint is available on Research Square:
