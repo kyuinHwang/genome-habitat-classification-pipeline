@@ -1,0 +1,10 @@
+## Download latest release from https://data.ace.uq.edu.au/public/gtdb/data/releases/
+bac120_metadata=./DB/bac120_metadata_r220.tsv
+ar53_metadata=./DB/ar53_metadata_r220.tsv
+
+## Download from https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt
+assembly_summary=./DB/assembly_summary_genbank.txt
+## Download from https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml
+bioproject_xml=./DB/bioproject.xml
+## Download from https://ftp.ncbi.nlm.nih.gov/biosample/biosample_set.xml.gz
+biosample_xml=./DB/biosample_set.xml.gz
