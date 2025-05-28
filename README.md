@@ -79,7 +79,7 @@ The run_accession2habitat.py composited by two scripts (1_, 2_).
   This script retrieves metadata entries for each genome using its associated BioProject or BioSample identifiers. It then scans these metadata texts for habitat-determining keywords (e.g., "freshwater", "lake", "river", "reservoir") associated with predefined habitat flags (e.g., "Freshwater"). If any of these keyword are found, the corresponding habitat flag is activated for the genome. Multiple flags may be activated per genome. For example, both "Freshwater" and "Modified" may be triggerred for a sample described as 'contaminated river'). Habitat-determining keywords and their associated flags are defined in lib/keyword_search.py.
 
 - `2_HabitatDecisionFromMetadata.py`  
-  This script determines the most likely environmental origin of each genome based on the combination of activated habitat flags. If conflicting habitat flags (e.g., "Marine" and "Freshwater") are both activated, the genome is classified as "Others". If no habitat-determining keywords were matched and no flag is activated, the genome is classified as "Unspecified". The rule-based decision logic is implemented in lib/habitat_rules.py.
+  This script determines the most likely environmental origin of each genome based on the combination of activated habitat flags. If conflicting habitat flags (e.g., "Marine" and "Freshwater") are both activated, the genome is considered to originate from an "Others". If no habitat-determining keywords were matched and no flag is activated, the genome is considered to originate from an "Unspecified". The flag-based decision logic is implemented in lib/habitat_rules.py.
 
 - `3_JoinGTDBMeta.py`  
   Merges GTDB metadata (genome size, completeness, taxa, ...) with habitat decision for comprehensive analysis.
@@ -95,11 +95,15 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For questions or suggestions, please contact Kyuin Hwang (kyuin@kopri.re.kr).
+If you encounter a problem or have a question, please open an issue on this repository:
+👉 [Submit an issue](https://github.com/kyuinHwang/genome-habitat-classification-pipeline/issues)
+
+For direct inquiries, you may contact the maintainer at: rbdls77@gmail.com
+
 
 ## Reference
 
-This pipeline was developed as part of a research project on single-cell genomics analysis of Mercer Subglacial Lake.
+This pipeline was developed as part of a research project on single-cell genomics analysis of Mercer Subglacial Lake in Antarctica.
 
 The preprint is available on Research Square:
 https://www.researchsquare.com/article/rs-4392950/v1
