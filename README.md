@@ -23,7 +23,7 @@ No additional Python packages are strictly required, as the pipeline mainly uses
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/GenomeHabitatClassifier.git
+git clone https://github.com/kyuinHwang/GenomeHabitatClassifier.git
 cd GenomeHabitatClassifier
 ```
 
