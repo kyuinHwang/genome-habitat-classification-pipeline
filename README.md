@@ -63,7 +63,7 @@ python run_gtdbtaxa2habitat_pipeline.py --target_taxa g__Nitrotoga --output_dir 
 ```
 2. Run habitat classification from genome accession list
 ```bash
-python run_accession2habitat.py --input_accessions ./genomes.txt --output_dir ./output
+python run_accession2habitat.py --input_accessions ./examples/g__Nitortoga/genomeAccs.txt --output_dir ./output
 ```
 Run -h on either script for detailed options.
 
