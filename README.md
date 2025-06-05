@@ -97,6 +97,21 @@ The run_accession2habitat.py composited by two scripts (1_, 2_).
 
 These modules are designed to be easily extendable for customization or integration with other bioinformatics pipelines.
 
+## Output
+
+**habitatInfo.txt (See ./examples/g__Nitrotoga/habitatInfo.txt)**
+This file summarizes the inferred habitat information for each genome, based on keyword matching and classification from both BioProject and BioSample metadata.
+
+Key fields include:
+
+- 'bioprojectFlags': Habitat-related flags detected from the BioProject metadata, based on matched keywords.
+- 'bioprojectHabitat': Habitat classification inferred from the 'bioprojectFlags'
+- 'biosampleFlags': Habitat-related flags detected from the BioSample metadata.
+- 'biosampleHabitat': Habitat classification inferred from the 'biosampleFlags'.
+- 'sumHabitat': Final consensus classification derived from both 'bioprojectHabitat' and 'biosampleHabitat'
+
+**Result.txt (See ./examples/g__Nitrotoga/Result.txt)**  
+This file extends `habitatInfo.txt` by adding genome-level metadata (e.g., taxonomy, assembly statistics). It summarizes both the inferred habitat and basic genome information.
 
 ## License
 
