@@ -71,6 +71,9 @@ python run_accession2habitat.py --input_accessions ./examples/g__Nitortoga/genom
 ```
 Run -h on either script for detailed options.
 
+The demo may take a few hours to complete on a standard desktop environment, depending on file I/O performance and the number of genomes processed.
+Due to the large number of BioProject and BioSample records being parsed, the process may take a while — please be patient
+
 ## Scripts and Libraries
 
 This pipeline consists of several modular scripts and library files to facilitate genome habitat classification.
