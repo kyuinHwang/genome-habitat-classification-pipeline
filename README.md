@@ -100,6 +100,7 @@ The run_accession2habitat.py composited by two scripts (1_, 2_).
 ---
 
 These modules are designed to be easily extendable for customization or integration with other bioinformatics pipelines.
+We encourage users to refine the habitat-determining keywords, flags, and the rule-based logic in the two files of ./lib to better align with the specific goals of your own project .
 
 ## Output
 
@@ -115,7 +116,7 @@ Key fields include:
 - 'sumHabitat': Final consensus classification derived from both 'bioprojectHabitat' and 'biosampleHabitat'
 
 **Result.txt (See ./examples/g__Nitrotoga/Result.txt)**  
-This file extends `habitatInfo.txt` by adding genome-level metadata (e.g., taxonomy, assembly statistics). It summarizes both the inferred habitat and basic genome information.
+This file extends `habitatInfo.txt` by adding genome-level metadata (e.g., taxonomy, assembly statistics). It summarizes both the inferred habitat and basic genome information (See an example use case at the bottom of this README).
 
 ## License
 
@@ -139,5 +140,8 @@ https://www.researchsquare.com/article/rs-4392950/v1
 (This link will be updated upon journal publication.)
 
 The habitat-determining keywords, flags, habitat-determining rules available in the Supplementary Tables
+
+## Example Use Case: Custom Habitat Definition
+For example, if your research goal is to identify microbial genomes originating from Antarctic soil, you can define a custom "Antarctic" flag by linking it to relevant keywords (e.g., "Antarctica", "polar region") and a "Soil" flag with keywords such as "soil", "sediment", or "permafrost". You may also choose to define "Marine" or "Reactor" flags to help exclude genomes that likely do not come from soil environments.Based on these custom flags, you can adjust the classification logic to identify genomes where both the "Antarctic" and "Soil" flags are activated, while "Marine" and "Freshwater" flags are not — thereby refining your classification to target "Antarctic soil" habitats specifically.
 
 Parts of this README were written or revised with the help of AI to enhance clarity and precision.
