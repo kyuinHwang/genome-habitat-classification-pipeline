@@ -16,6 +16,7 @@ This repository contains a pipeline to classify the habitats of source organisms
 ## Installation
 
 This pipeline requires Python 3.10 or higher
+
 No additional Python packages are strictly required, as the pipeline mainly uses standard libraries and subprocess calls.
 
 Clone the repository:
