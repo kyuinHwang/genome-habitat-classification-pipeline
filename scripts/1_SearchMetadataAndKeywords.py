@@ -127,7 +127,7 @@ def biosampleSearchHabitat(tree):
 def cleanText(text):
     text = text.replace('\t',' ').replace('\n',' ').replace('<sup>','').replace('</sup>','').replace('\r','')
     ## remove markers for "Bold", "Italtic", others
-    text =  re.sub("\</?[ibpIBP]\>","",text)## Pattern, To, OriginalText
+    text =  re.sub(r"\</?[ibpIBP]\>","",text)## Pattern, To, OriginalText
     return text.strip()
 
 def parseArg():

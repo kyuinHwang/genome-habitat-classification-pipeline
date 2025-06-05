@@ -2,8 +2,6 @@
 
 This repository contains a pipeline to classify the habitats of source organisms based on descriptions in Bioproject and Biosample records. It first identifies related Bioproject and Biosample accession IDs from GTDB metadata, NCBI metadata, or both, and then retrieves corresponding descriptive metadata from these records to provide habitat classification for bacterial and archaeal genomes.
 
-
-
 ---
 
 ## Features
@@ -39,6 +37,13 @@ bash downloadDB.sh
 > **Note on GTDB Metadata Files:**  
 > GTDB metadata filenames (e.g., `ar53_metadata_r220.tsv.gz`, `bac120_metadata_r220.tsv.gz`) may change with each release.  
 > Please check the [GTDB data releases page](https://data.ace.uq.edu.au/public/gtdb/data/releases/) for the latest filenames and update both the `downloadDB.sh` script and your `config.txt` accordingly before downloading and running the pipeline.
+
+Tested on Ubuntu 24.04 (Docker container on macOS) with Python 3.12.7 and standard library only.
+
+System requirements: No special hardware is required. The pipeline runs on a standard laptop environment
+
+Typical install time:
+Cloning the repository takes only a few seconds. However, downloading external metadata via downloadDB.sh may take up to several tens of minutes depending on network speed (approximately 8.5 GB in total).
 
 ### Configuration
 
