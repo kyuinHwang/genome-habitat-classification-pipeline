@@ -40,7 +40,8 @@ bash downloadDB.sh
 
 Tested on Ubuntu 24.04 (Docker container on macOS) with Python 3.12.7 and standard library only.
 
-System requirements: No special hardware is required. The pipeline runs on a standard laptop environment
+System requirements:
+No special hardware is required for typical use cases (e.g., analyzing genomes from a single genus or species). However, when scaling up to large datasets (e.g., all bacterial genomes), increased memory capacity may be necessary.
 
 Typical install time:
 Cloning the repository takes only a few seconds. However, downloading external metadata via downloadDB.sh may take up to several tens of minutes depending on network speed (approximately 8.5 GB in total).
