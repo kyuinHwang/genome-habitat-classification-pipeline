@@ -25,6 +25,8 @@ git clone https://github.com/kyuinHwang/genome-habitat-classification-pipeline.g
 cd genome-habitat-classification-pipeline
 ```
 
+Cloning the repository takes only a few seconds on a standard desktop environment.
+
 Before running the pipeline, you need to download the required metadata files.  
 We provide a helper script `downloadDB.sh` to download most database files automatically.
 
@@ -38,13 +40,14 @@ bash downloadDB.sh
 > GTDB metadata filenames (e.g., `ar53_metadata_r220.tsv.gz`, `bac120_metadata_r220.tsv.gz`) may change with each release.  
 > Please check the [GTDB data releases page](https://data.ace.uq.edu.au/public/gtdb/data/releases/) for the latest filenames and update both the `downloadDB.sh` script and your `config.txt` accordingly before downloading and running the pipeline.
 
-Tested on Ubuntu 24.04 (Docker container on macOS) with Python 3.12.7 and standard library only.
 
-System requirements:
-No special hardware is required for typical use cases (e.g., analyzing genomes from a single genus or species). However, when scaling up to large datasets (e.g., all bacterial genomes), increased memory capacity may be necessary.
+## System Requirements & Notes
 
-Typical install time:
-Cloning the repository takes only a few seconds. However, downloading external metadata via downloadDB.sh may take up to several tens of minutes depending on network speed (approximately 8.5 GB in total).
+**Tested on:** Ubuntu 24.04 (Docker container on macOS) with Python 3.12.7 and standard library only.
+
+**Hardware:** No special hardware is required for typical use cases (e.g., analyzing genomes from a single genus or species). However, when scaling up to large datasets (e.g., all bacterial genomes), increased memory capacity may be necessary.
+
+**Database download:** Running downloadDB.sh will download GTDB/NCBI metadata (~8.5 GB). This may take several minutes to tens of minutes depending on your internet speed.
 
 ### Configuration
 
