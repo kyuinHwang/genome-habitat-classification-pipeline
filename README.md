@@ -23,8 +23,8 @@ No additional Python packages are strictly required, as the pipeline mainly uses
 Clone the repository:
 
 ```bash
-git clone https://github.com/kyuinHwang/GenomeHabitatClassifier.git
-cd GenomeHabitatClassifier
+git clone https://github.com/kyuinHwang/genome-habitat-classification-pipeline.git
+cd genome-habitat-classification-pipeline
 ```
 
 Before running the pipeline, you need to download the required metadata files.  
