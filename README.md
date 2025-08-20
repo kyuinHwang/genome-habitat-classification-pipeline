@@ -134,7 +134,7 @@ For direct inquiries, you may contact the maintainer at: rbdls77@gmail.com
 
 This pipeline was developed as part of a research project on single-cell genomics analysis of Mercer Subglacial Lake in Antarctica.
 
-The manuscript is available on Following link:
+The manuscript is available at the following link:
 https://www.nature.com/articles/s41467-025-62753-3
 
 The habitat-determining keywords, flags, habitat-determining rules available in the Supplementary Tables
