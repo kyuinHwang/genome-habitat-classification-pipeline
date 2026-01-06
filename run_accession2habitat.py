@@ -24,7 +24,7 @@ def configCheck(config,args):
         if not os.path.exists(config['biosample_xml']): raise ValueError(f"Biosample XML {config['biosample_xml']} is absent")
 
 def prepare1stStepCmd(args, config):
-    tags = ['python', './scripts/1_SearchMetadataAndKeywords.py',  f"--subject={args.subject}", f"--targetDB={args.targetDB}", f"--genomeAccs={args.genomeAccs}"]
+    tags = ['python', './scripts/1_SearchMetadataAndKeywords.py',  f"--subject={args.subject}", f"--targetDB={args.targetDB}", f"--genomeAccs={args.input_accessions}"]
     if args.targetDB == 'Both' or args.targetDB == 'GTDB': tags.append(f"--gtdbmeta={config['gtdbmeta']}")
     if args.targetDB == 'Both' or args.targetDB == 'NCBI': tags.append(f"--ncbimeta={config['assembly_summary']}")
     if args.subject == 'Both' or args.subject == 'Bioproject': 
@@ -37,7 +37,7 @@ def prepare1stStepCmd(args, config):
     return tags
 
 def prepare2ndStepCmd(args,config):
-    tags = ['python', './scripts/2_HabitatDecisionFromMetadata.py',  f"--subject={args.subject}", f"--targetDB={args.targetDB}", f"--genomeAccs={args.genomeAccs}"]
+    tags = ['python', './scripts/2_HabitatDecisionFromMetadata.py',  f"--subject={args.subject}", f"--targetDB={args.targetDB}", f"--genomeAccs={args.input_accessions}"]
     if args.targetDB == 'Both' or args.targetDB == 'GTDB': tags.append(f"--gtdbmeta={config['gtdbmeta']}")
     if args.targetDB == 'Both' or args.targetDB == 'NCBI': tags.append(f"--ncbimeta={config['assembly_summary']}")
     if args.subject == 'Both' or args.subject == 'Bioproject': 
@@ -50,7 +50,7 @@ def prepare2ndStepCmd(args,config):
 def main():
     ## bac120_metadata, ar53_metadata, assembly_summary, bioproject_xml, biosample_xml
     parser = argparse.ArgumentParser(description="Run a genome habitat classification pipeline starting from a list of genome accessions.\nSupports GTDB, NCBI, or both metadata sources.")
-    parser.add_argument("--genomeAccs", required=True, help="Path to file containing genome accession list (one per line, e.g. GCA_021304231.1).")
+    parser.add_argument("--input_accessions", required=True, help="Path to file containing genome accession list (one per line, e.g. GCA_021304231.1).")
     parser.add_argument("--output_dir", default='./output', help="Directory to save output files. (Default: ./output)")
     parser.add_argument("--config", default='./config.txt', help="Path to configuration file. (Default: ./config.txt)")
     parser.add_argument("--targetDB", choices=['Both','GTDB', 'NCBI'], default='Both', help="Metadata database to extract Bioproject/Biosample information linked to genome accessions: GTDB, NCBI, or Both. (Default: Both)")
