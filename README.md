@@ -72,6 +72,8 @@ python run_accession2habitat.py --input_accessions ./examples/g__Nitortoga/genom
 ```
 Run -h on either script for detailed options.
 
+**Note: The input list should consist of GenBank IDs (typically starting with the GCA_ prefix; see examples/g__Nitrotoga/genomeAccs.txt for an example).**
+
 The demo may take a few hours to complete on a standard desktop environment, depending on file I/O performance and the number of genomes processed.
 Due to the large number of BioProject and BioSample records being parsed, the process may take a while — please be patient
 
