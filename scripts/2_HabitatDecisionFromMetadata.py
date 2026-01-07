@@ -198,7 +198,7 @@ def main():
     
     sumHabitatCnt = Counter()
     for genomeAcc in genomeAccL:
-        bioprojectAcc, biosampleAcc = bioprojectD[genomeAcc], biosampleD[genomeAcc]
+        bioprojectAcc, biosampleAcc = bioprojectD.get(genomeAcc,""), biosampleD.get(genomeAcc,"")
         projectID, projectTitle, projectName, projectDec, projectType, projectFlagCnt = bioprojectInfoD.get(bioprojectAcc,(bioprojectAcc,"","","","",Counter())) ## (projectID, projectTitle, projectName, projectDec, projectType, habitatCnt)
         sampleID, sampleTitle, sampleTaxID, sampleTaxname, sampleType, sampleLocation, sampleSource, sampleEnv, sampleFlagCnt = biosampleInfoD.get(biosampleAcc,(biosampleAcc,"","","","","","","",Counter()))
         projectEst = habitatDecision(projectFlagCnt)
