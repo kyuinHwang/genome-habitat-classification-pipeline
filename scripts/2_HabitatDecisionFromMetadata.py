@@ -171,7 +171,7 @@ def main():
                 bioprojectD[genomeAcc] = bioprojectNCBI
                 cntNodataProject += 1
             biosampleNCBI = biosampleNCBI_D.get(genomeAcc,'')
-            biosampleGTDB = biosampleGTDB_D[genomeAcc]
+            biosampleGTDB = biosampleGTDB_D.get(genomeAcc,'')
             ## Prefer bioproject written in NCBI than GTDB. ## The large scale metagenome reassembly project is assigned for more genomes in GTDB metadata 
             if biosampleNCBI in biosampleInfoD: 
                 biosampleD[genomeAcc] = biosampleNCBI
